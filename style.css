@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-family: montserrat;
+}
+
+header {
+    /* background: url(./wallpaperflare.com_wallpaper\ \(30\).jpg); */
+    background: linear-gradient(rgba(31, 17, 44, 0.3), rgba(31, 17, 44, 0.3)), url(./digital-digital-art-artwork-illustration-concept-art-hd-wallpaper-946c84a81dd96229f41324f97951629d.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    inset: 0 0 auto 0;
+    display: flex;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 150px;
+    opacity: 0;
+    animation: nav .5s ease-in-out 3s forwards;
+}
+
+@keyframes nav {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links * {
+    font-size: .85rem;
+    transform: scaleX(.8);
+}
+
+.logo {
+    font-family: serif;
+    font-size: 3rem;
+    color: #00f7ff;
+}
+
+main {
+    width: 60vw;
+    height: 100vh;
+    background: rgba(31, 17, 44, 0.2);
+    backdrop-filter: blur(18px);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0 150px;
+    z-index: 3;
+    position: relative;
+}
+
+.heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 150px;
+}
+
+.heading h1 {
+    font-size: 7rem;
+    line-height: 6rem;
+    margin-left: 90px;
+    width: fit-content;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 70%);
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 11% 100%, 11% 100%);
+    clip-path: polygon(11% 0, 11% 0, 11% 100%, 11% 100%, 11% 100%);
+    animation: whit 1s linear 2s reverse forwards;
+}
+
+h1.accent {
+    color: #00f7ff;
+    margin-left: 0;
+    width: fit-content;
+    clip-path: polygon(0 0, 100% 0, 100% 51%, 70% 100%, 0 100%);
+    clip-path: polygon(0 0, 78% 0, 78% 0, 78% 100%, 0 100%);
+    clip-path: polygon(78% 0, 78% 0, 78% 0, 78% 100%, 78% 100%);
+    animation: gree 1s linear 2s reverse forwards;
+}
+
+.heading p {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    font-size: 1.2rem;
+    clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+    animation: peee 1s linear 2s reverse forwards;
+}
+
+.magic {
+    /* content: ''; */
+    position: absolute;
+    width: 4px;
+    height: 130%;
+    transform: rotate(45deg);
+    top: -30px;
+    left: 130px;
+    background-color: #00f7ff;
+    transform: rotate(0deg);
+    height: 0%;
+    top: 50%;
+    animation: lin 2s linear 1s reverse forwards;
+}
+
+@keyframes gree {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 51%, 70% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 0, 78% 0, 78% 0, 78% 100%, 0 100%);
+    }
+
+    70% {
+        clip-path: polygon(0 0, 78% 0, 78% 0, 78% 100%, 0 100%);
+        transform: translateX(0);
+    }
+
+    100% {
+        clip-path: polygon(78% 0, 78% 0, 78% 0, 78% 100%, 78% 100%);
+    }
+}
+
+@keyframes whit {
+    0% {
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 70%);
+    }
+
+    50% {
+        clip-path: polygon(11% 0, 100% 0, 100% 100%, 11% 100%, 11% 100%);
+    }
+
+    65% {
+        clip-path: polygon(11% 0, 100% 0, 100% 100%, 11% 100%, 11% 100%);
+    }
+
+    100% {
+        clip-path: polygon(11% 0, 11% 0, 11% 100%, 11% 100%, 11% 100%);
+    }
+}
+
+@keyframes peee {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    75% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    80% {
+        clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+    }
+}
+
+@keyframes lin {
+    0% {
+        transform: rotate(45deg);
+        height: 130%;
+        top: -30px;
+    }
+
+    20% {
+        transform: rotate(0deg);
+        height: 130%;
+        top: -30px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        height: 130%;
+        top: -30px;
+    }
+
+    90% {
+        height: 0%;
+        transform: rotate(0deg);
+        top: 50%;
+    }
+
+    100% {
+        height: 0%;
+        transform: rotate(0deg);
+        top: 50%;
+    }
+}
+
+.heading img {
+    position: absolute;
+    width: 150%;
+    top: -100px;
+    left: -50px;
+    transform: rotate(-45deg);
+    pointer-events: none;
+    user-select: none;
+    /* animation: img .6s ease-in-out 3s forwards; */
+    /* opacity: 0; */
+}
+
+@keyframes img {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.side {
+    margin-top: 50px;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    animation: side .5s ease-in-out 3s forwards;
+}
+
+@keyframes side {
+    0% {
+        margin-top: 50px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 100px;
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.side p {
+    max-width: 350px;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+a.btn {
+    background-color: #00f7ff;
+    padding: 8px 30px;
+    border-radius: 20px;
+    color: #000;
+    font-size: .8rem;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+a.btn::after, a.btn::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+    top: 0;
+    transform: skewX(-20deg) translateX(-200%);
+    transition: all 0.8s;
+}
+
+a.btn:hover::after, a.btn:hover::before {
+    transform: skewX(-20deg) translateX(0);
+}
+
+.ball {
+    position: fixed;
+    top: 90%;
+    left: calc(10% * var(--b));
+    transform: translateX(-400%);
+    z-index: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 247, 255, 0.05);
+    opacity: 0;
+    border-radius: 50%;
+    /* backdrop-filter: blur(10px); */
+    /* filter: blur(20px); */
+    animation: balll 2s linear infinite forwards;
+    animation-delay: var(--a);
+}
+
+@keyframes balll {
+    0% {
+        transform: translateX(-400%);
+        top: 90%;
+        border-radius: 50%;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-400%) scale(5);
+        top: -10%;
+        opacity: 1;
+    }
+}
+
+
+
+
+/* *Sequence 1
+@keyframes paraT {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    28.5% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    40% {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+@keyframes whiteT {
+    0% {
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 70%);
+    }
+    20% {
+        clip-path: polygon(11% 0, 100% 0, 100% 100%, 11% 100%, 11% 100%);
+    }
+    40% {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+    }
+    58% {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%, 0% 100%);
+    }
+    80% {
+        clip-path: polygon(11% 0, 100% 0, 100% 100%, 11% 100%, 11% 100%);
+    }
+    100% {
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 70%);
+    }
+}
+@keyframes greenT {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 51%, 70% 100%, 0 100%);
+    }
+    20% {
+        clip-path: polygon(0 0, 78% 0, 78% 0, 78% 100%, 0 100%);
+    }
+    26% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    68% {
+        clip-path: polygon(0 0, 0% 0, 0% 0, 0% 100%, 0 100%);
+    }
+    75% {
+        clip-path: polygon(0 0, 78% 0, 78% 0, 78% 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 51%, 70% 100%, 0 100%);
+    }
+}
+@keyframes magic {
+    0% {
+        transform: rotate(45deg);
+        left: 130px;
+    }
+    20% {
+        transform: rotate(0deg);
+        left: 130px;
+    }
+    40% {
+        transform: rotate(0deg);
+        left: 100%;
+    }
+    60% {
+        transform: rotate(0deg);
+        left: 0;
+    }
+    80% {
+        transform: rotate(0deg);
+        left: 130px;
+    }
+    100% {
+        transform: rotate(45deg);
+        left: 130px;
+    }
+} */
